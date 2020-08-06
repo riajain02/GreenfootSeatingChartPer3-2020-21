@@ -10,16 +10,7 @@ public class KabirShah extends Student implements CSALearnedSoFar, NumberOfSibli
 {
 
     /**
-     * Constructor for the KilgoreTrout class.
-     * Constructors are special methods with the same exact name as the class name.  
-     * Constructors to not have return types.
-     * Constructors can be overloaded. This means we can call a constructor with different sets of parameter
-     *  lists to initalize for different conditions (depending on what constructors have been written.
-     * @param String f (firstname)
-     * @param String l (lastname)
-     * @param int r (row of seating arrangement)
-     * @param int s (seat number within row seating arrangement)
-     * 
+     * Construct a KabirShah with a specific name and seat.
      */
     public KabirShah(String f, String l, int r, int s) {
         firstName = f;
@@ -38,9 +29,7 @@ public class KabirShah extends Student implements CSALearnedSoFar, NumberOfSibli
     }
     
     /**
-     * Default constructor, if you don't pass in a name and seating location
-     * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
-     * of the classroom.
+     * Construct a default KabirShah with his actual name and seat.
      */
     public KabirShah() {
        firstName = "Kabir";
@@ -59,41 +48,58 @@ public class KabirShah extends Student implements CSALearnedSoFar, NumberOfSibli
     }
 
     /**
-     * Prints the name to the console.
+     * Prints name to the console.
      */
     public void getName(){
         System.out.println("Hey, I'm " + firstName + " " + lastName);
     }
     
+    /**
+     * Prints AP CSA skills learned so far to the console.
+     */
     public void LearnedSoFar() {
-        System.out.println("");
+        System.out.println("I've learned Java syntax, statements, classes, objects, inheritance, and interfaces.");
     }
     
+    /**
+     * Returns total number of siblings.
+     */
     public int numberOfSiblings() {
         return numberOfBrothers() + numberOfSisters();
     }
     
+    /**
+     * Returns number of brothers.
+     */
     public int numberOfBrothers() {
         return 1;
     }
     
+    /**
+     * Returns number of sisters.
+     */
     public int numberOfSisters() {
-        return 1;
+        return 0;
     }
-    
+
+    /**
+     * Prints a given sports sentence.
+     */
     public void mySport(String s) {
         System.out.println(s);
     }
     
+    /**
+     * Prints a given hobby sentence.
+     */
     public void myHobby(String s) {
         System.out.println(s);
     }
     
-        /**
-     * This is a local method specific to the KilgoreTrout class used to animate the character once the image is clicked on.
-     * You should write your own methods to perform your own animation for your character/avatar.
+    /**
+     * Starts the pacman/spongebob animation.
      */
-    public void circleClass(){
+    public void startAnimation() {
         setLocation(0,0);
          Greenfoot.delay(10);
         // move right
@@ -121,43 +127,20 @@ public class KabirShah extends Student implements CSALearnedSoFar, NumberOfSibli
     }
         
     /**
-     * This method needs to allow the user to interact with the student through a question and answer interface, and provide
-     * some mechanism that allows the student to sit down once the Q&A session ends.  You can use this basic model, or come up
-     * with some additional class and object that represents a blackboard, or a talking cartoon bubble etc. If you provide extra
-     * classes, make sure to fully document so other students can use the same interface.
+     * Start giving the loop group lesson.
      */
-    public void provideLesson(){
-        while (! sitting) {
-        String q=Greenfoot.ask("Are you ready to start (yes/no)");
-        if (q.contains("yes")){
-         // put in your lesson here - you can open up a browser for a screencast
-         // Create a blackboard image and write to it, etc
-         // Use an animated gif and dub over with audio - see "controls/show sound recoder"
-         // from main greenfoot menu for a simple to use soud editor
-        
-         
-        // You can end the lesson and "sitDown" once the lesson is complete, or once
-        // someone answers "yes" to the sitdown question
-        }
-        else {
-          q=Greenfoot.ask("I don't understand the question... May I sit down?"); 
-        }
-         if (q.equals("yes")){
-            Greenfoot.delay(10);
-            sitDown();
-        }
-    }
+    public void provideLesson() {
         
     }
     
-    public void answerQuestion(){
-        // may not need
-    }
+    /**
+     * Answer any questions.
+     */
+    public void answerQuestion() {}
         
     /**
-     * Act - do whatever the KilgoreTrout actor wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */   
+     * Give an introduction and begin an animation when clicked.
+     */
     public void act() {
         if (Greenfoot.mouseClicked(this)) {
             sitting=false;
@@ -171,7 +154,7 @@ public class KabirShah extends Student implements CSALearnedSoFar, NumberOfSibli
             myHobby("I like to play guitar.");
             mySport("I play soccer and lacrosse.");
             
-            circleClass();
+            startAnimation();
             provideLesson();
             sitDown();
         }
