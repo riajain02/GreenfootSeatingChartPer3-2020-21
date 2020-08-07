@@ -9,9 +9,7 @@ HOW TO START THIS PROJECT:  To start this project, assuming that you have Greenf
 
 AUTHORS:                    Mr. Kaehms and CSA students
 
-CONTRIBUTERS:               Kilgore Trout
-                            (Add you name here once your code 
-                             is added and correct)
+CONTRIBUTERS:               Anshul Kashyap
 
 USER INSTRUCTIONS:
 
