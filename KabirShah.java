@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author Kabir Shah
  * @version 1.0
  */
-public class KabirShah extends Student implements CSALearnedSoFar, NumberOfSiblings, SpecialInterestOrHobby, StudentAthlete
+public class KabirShah extends LoopGroup implements CSALearnedSoFar, NumberOfSiblings, SpecialInterestOrHobby, StudentAthlete
 {
 
     /**
@@ -125,18 +125,6 @@ public class KabirShah extends Student implements CSALearnedSoFar, NumberOfSibli
            Greenfoot.delay(20);
            returnToSeat();
     }
-        
-    /**
-     * Start giving the loop group lesson.
-     */
-    public void provideLesson() {
-        
-    }
-    
-    /**
-     * Answer any questions.
-     */
-    public void answerQuestion() {}
         
     /**
      * Give an introduction and begin an animation when clicked.
