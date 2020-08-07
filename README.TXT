@@ -1,4 +1,5 @@
-﻿
+﻿INSTRUCTIONS: https://docs.google.com/document/d/112FdAI40XN_hp4vt_-1PAZxKl8n4g49Ojug9lFDJ_BM/edit
+
 PROJECT TITLE: AP CSA Assignment 1 (An interactive seating chart using Greenfoot)
 
 PURPOSE OF PROJECT: The purpose of this assignment is to visually work with classes and subclasses, abstract classes, and interfaces, and to familiarize yourself with the basics of the GIT command line.  As a side effect, it will help your instructor learn your names!
@@ -10,7 +11,7 @@ HOW TO START THIS PROJECT:  To start this project, assuming that you have Greenf
 AUTHORS:                    Mr. Kaehms and CSA students
 
 CONTRIBUTERS:               Kilgore Trout
-                            (Add you name here once your code 
+                            (Add you name here once your code
                              is added and correct)
 
 USER INSTRUCTIONS:
