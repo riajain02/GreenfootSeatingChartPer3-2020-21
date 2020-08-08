@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class KilgoreTrout extends Student implements SpecialInterestOrHobby
 {
+    
 
     /**
      * Constructor for the KilgoreTrout class.
